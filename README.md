@@ -32,13 +32,15 @@ comparer.py -i <inputfile> -o <outputfile> -c <command>
 
 ## Help
 
+```python
 comparer.py -i <inputfile> -o <outputfile> -c <command>')
   
   -h help
   -i (ifile=''): initial file to compare cmd to
   -o (ofile=''): output of command to be saved to file (tmp file)
   -c (cmd='')  : system command
-  
+```
+
 Examples:
 
 ```bash
