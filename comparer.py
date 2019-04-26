@@ -3,6 +3,7 @@
 import sys, getopt
 import os
 import difflib
+import subprocess
 
 def main(argv):
 	inputfile = ''
@@ -42,6 +43,7 @@ def main(argv):
 
 		m=open(inputfile, "w")
 		m.write(myCmd)
+		subprocess.call(["rm", "-f", outputfile])
 
 if __name__ == "__main__":
    main(sys.argv[1:])
