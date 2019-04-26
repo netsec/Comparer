@@ -11,11 +11,11 @@ def main(argv):
 	try:
 		opts, args = getopt.getopt(argv,"hi:o:c:",["ifile=","ofile=","cmd="])
 	except getopt.GetoptError:
-		print ('test.py -i <inputfile> -o <outputfile> -c <command>')
+		print ('comparer.py -i <inputfile> -o <outputfile> -c <command>')
 		sys.exit(2)
 	for opt, arg in opts:
 		if opt == '-h':
-			print ('test.py -i <inputfile> -o <outputfile> -c <command>')
+			print ('comparer.py -i <inputfile> -o <outputfile> -c <command>')
 			sys.exit()
 		elif opt in ("-i", "--ifile"):
 			inputfile = arg
